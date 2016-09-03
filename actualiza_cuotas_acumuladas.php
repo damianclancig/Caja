@@ -1,4 +1,5 @@
 <?php
+	include("checkSession.php");
 	include("conexion.php");
 	require("class.sql.php");
 	$meses[1]="Enero";
@@ -14,6 +15,8 @@
 	$meses[11]="Noviembre";
 	$meses[12]="Diciembre";
 	$g=0;
+	$totalTC = 0;
+	$totalTS = 0;
 ?>
 <table border="0" cellpadding="0" cellspacing="0">
 	<tr class="titulo">
@@ -35,7 +38,7 @@
                 <tr>
                     <td class="tah11n">Suma de Cuotas Plan largo</td>
                     <td class="colum1"></td>
-                    <td class="tah11"><?php echo "$ ".number_format($row[monto],2,",","")?></td>
+                    <td class="tah11"><?php echo "$ ".number_format($row['monto'],2,",","")?></td>
                 </tr>
             </table>
         </td>
@@ -73,23 +76,23 @@
 		while($row = mysqli_fetch_array($res)){
 			?>
 			<tr bgcolor="#E0F1FF">
-				<td class="tah11n"><?php echo $row[nombre]?></td>
+				<td class="tah11n"><?php echo $row['nombre']?></td>
 				<td class="colum1"></td>
 				<td class="colum2"></td>
 				<td class="colum3"></td>
-				<td><?php echo "$ ".number_format($row[montoTC],2,",","")?></td>
+				<td><?php echo "$ ".number_format($row['montoTC'],2,",","")?></td>
 				<td class="colum1"></td>
 				<td class="colum2"></td>
 				<td class="colum3"></td>
-				<td><?php echo "$ ".number_format($row[montoTS],2,",","")?></td>
+				<td><?php echo "$ ".number_format($row['montoTS'],2,",","")?></td>
 				<td class="colum1"></td>
 				<td class="colum2"></td>
 				<td class="colum3"></td>
-				<td><?php echo "$ ".number_format($row[montoTC]+$row[montoTS],2,",","")?></td>
+				<td><?php echo "$ ".number_format($row['montoTC']+$row['montoTS'],2,",","")?></td>
 			</tr>
 			<?php
-			$totalTC += $row[montoTC];
-			$totalTS += $row[montoTS];
+			$totalTC += $row['montoTC'];
+			$totalTS += $row['montoTS'];
 		}
 	?>
 	<tr bgcolor="#E0F1FF">
@@ -143,23 +146,23 @@
 		while($row = mysqli_fetch_array($res)){
 			?>
 			<tr bgcolor="#E0F1FF">
-				<td class="tah11n"><?php echo $row[nombre]?></td>
+				<td class="tah11n"><?php echo $row['nombre']?></td>
 				<td class="colum1"></td>
 				<td class="colum2"></td>
 				<td class="colum3"></td>
-				<td><?php echo "$ ".number_format($row[montoTC],2,",","")?></td>
+				<td><?php echo "$ ".number_format($row['montoTC'],2,",","")?></td>
 				<td class="colum1"></td>
 				<td class="colum2"></td>
 				<td class="colum3"></td>
-				<td><?php echo "$ ".number_format($row[montoTS],2,",","")?></td>
+				<td><?php echo "$ ".number_format($row['montoTS'],2,",","")?></td>
 				<td class="colum1"></td>
 				<td class="colum2"></td>
 				<td class="colum3"></td>
-				<td><?php echo "$ ".number_format($row[montoTC]+$row[montoTS],2,",","")?></td>
+				<td><?php echo "$ ".number_format($row['montoTC']+$row['montoTS'],2,",","")?></td>
 			</tr>
 			<?php
-			$totalTC += $row[montoTC];
-			$totalTS += $row[montoTS];
+			$totalTC += $row['montoTC'];
+			$totalTS += $row['montoTS'];
 		}
 	?>
 	<tr bgcolor="#E0F1FF">

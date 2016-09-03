@@ -1,15 +1,17 @@
 <?php
 	include("checkSession.php");
 	include("conexion.php");
-	$g = 0;
+// 	$g = 0;
+	include 'variables.php';
 	?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title>Sistema de Caja</title>
-		<link rel="stylesheet" type="text/css" href="estilos1024.css">
-		<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 		<script type="text/javascript" src="funciones.js"></script>
 	</head>
 	<body id="body">
@@ -20,16 +22,6 @@
 			</div>
 			<div id="Brenovar">
 				<img id="imgRenovar" src="imagenes/renovar.jpg">
-			</div>
-			<div id="est">
-				<select id="estilo" class="tah11">
-					<option value="800">800</option>
-					<option value="1024">1024</option>
-					<option value="1152">1152</option>
-					<option value="1280">1280</option>
-					<option value="1440">1440</option>
-					<option value="1600">1600</option>
-				</select>
 			</div>
 		</div>
 		<div id="herramientas">
@@ -227,7 +219,7 @@
 				</table>
 			</div>
 			<div id="scroll2">
-				<table class="tah11" bgcolor="#FFFFFF">
+				<table class="tah11 fondoBlanco">
 					<tr>
 						<td class="borIzqSup"></td>
 						<td class="borSup"></td>
@@ -246,7 +238,7 @@
 				</table>
 			</div>
 			<div id="DListaC">
-				<table class="tah11" bgcolor="#FFFFFF">
+				<table class="tah11 fondoBlanco">
 					<tr>
 						<td class="borIzqSup"></td>
 						<td class="borSup"></td>
@@ -265,7 +257,7 @@
 				</table>
 			</div>
 			<div id="DListaAct">
-				<table class="tah11" bgcolor="#FFFFFF" onmousedown="dragStart(event, 'DListaAct')">
+				<table class="tah11 fondoBlanco">
 					<tr>
 						<td class="borIzqSup"></td>
 						<td class="borSup"></td>
@@ -284,7 +276,7 @@
 				</table>
 			</div>
 			<div id="DListaGas">
-				<table class="tah11" bgcolor="#FFFFFF" onmousedown="dragStart(event, 'DListaGas')">
+				<table class="tah11 fondoBlanco">
 					<tr>
 						<td class="borIzqSup"></td>
 						<td class="borSup"></td>
@@ -303,7 +295,7 @@
 				</table>
 			</div>
 			<div id="DCuotasAcu">
-				<table class="tah11" bgcolor="#FFFFFF" onmousedown="dragStart(event, 'DCuotasAcu')">
+				<table class="tah11 fondoBlanco">
 					<tr>
 						<td class="borIzqSup"></td>
 						<td class="borSup"></td>

@@ -1,4 +1,5 @@
 <?php
+	include("checkSession.php");
 	include("conexion.php");
 	require("class.sql.php");
 	$meses[1]="Enero";
@@ -16,13 +17,13 @@
 	$g=0;
 ?>
 
-<table border="0" cellpadding="0" cellspacing="0">
+<table>
 	<tr class="titulo">
 		<td width="218">Gastos</td>
 		<td width="20" onclick="MostrarOcultar(document.getElementById('TablaGas').style);">-</td>
 	</tr>
 </table>
-<table border="0" cellpadding="0" cellspacing="0" id="TablaGas">
+<table id="TablaGas">
 	<tr><td height="5"></td></tr>
 	<?php
 		$messel = $_POST["messel"];
@@ -42,11 +43,11 @@
 	?>
 	<tr>
 		<td colspan="3">
-			<table border="0" cellpadding="0" cellspacing="0">
+			<table>
 				<tr>
 					<td class="tah11n">Mes de <?php echo $meses[$messel]?> de <?php echo $anosel?></td>
 					<td width="10"></td>
-					<td>$ <?php echo number_format($row[monto],2,",","")?></td>
+					<td>$ <?php echo number_format($row['monto'],2,",","")?></td>
 				</tr>
 			</table>
 		</td>
@@ -59,7 +60,7 @@
 	?>
 	<tr>
 		<td colspan="3">
-			<table border="0" cellpadding="0" cellspacing="0">
+			<table>
 				<tr class="tah11n">
 					<td colspan="7" align="center" bgcolor="#E0F1FF" width="100%">Semanas</td>
 				</tr>
@@ -73,13 +74,13 @@
 					<td width="50">4ta</td>
 				</tr>
 				<tr>
-					<td>$ <?php echo number_format($row[primera],2,",","")?></td>
+					<td>$ <?php echo number_format($row['primera'],2,",","")?></td>
 					<td class="colum1"></td>
-					<td>$ <?php echo number_format($row[segunda],2,",","")?></td>
+					<td>$ <?php echo number_format($row['segunda'],2,",","")?></td>
 					<td class="colum1"></td>
-					<td>$ <?php echo number_format($row[tercera],2,",","")?></td>
+					<td>$ <?php echo number_format($row['tercera'],2,",","")?></td>
 					<td class="colum1"></td>
-					<td>$ <?php echo number_format($row[cuarta],2,",","")?></td>
+					<td>$ <?php echo number_format($row['cuarta'],2,",","")?></td>
 				</tr>
 			</table>
 		</td>
@@ -92,16 +93,16 @@
 	?>
 	<tr>
 		<td>
-			<table border="0" cellpadding="0" cellspacing="0">
+			<table>
 				<tr class="tah11n">
 					<td>Ayer</td>
 					<td class="colum1"></td>
 					<td>Hoy</td>
 				</tr>
 				<tr>
-					<td>$ <?php echo number_format($row[ayer],2,",","")?></td>
+					<td>$ <?php echo number_format($row['ayer'],2,",","")?></td>
 					<td class="colum1"></td>
-					<td>$ <?php echo number_format($row[hoy],2,",","")?></td>
+					<td>$ <?php echo number_format($row['hoy'],2,",","")?></td>
 				</tr>
 			</table>
 		</td>
@@ -112,7 +113,7 @@
 			$row = mysqli_fetch_array($res);
 		?>
 		<td>
-			<table border="0" cellpadding="0" cellspacing="0">
+			<table>
 				<tr class="tah11n">
 					<td>Efectivo</td>
 					<td class="colum1"></td>
@@ -121,11 +122,11 @@
 					<td>Total</td>
 				</tr>
 				<tr>
-					<td>$ <?php echo number_format($row[efectivo],2,",","")?></td>
+					<td>$ <?php echo number_format($row['efectivo'],2,",","")?></td>
 					<td class="colum1"></td>
-					<td>$ <?php echo number_format($row[banco],2,",","")?></td>
+					<td>$ <?php echo number_format($row['banco'],2,",","")?></td>
 					<td class="colum1"></td>
-					<td>$ <?php echo number_format($row[efectivo]+$row[banco],2,",","")?></td>
+					<td>$ <?php echo number_format($row['efectivo']+$row['banco'],2,",","")?></td>
 				</tr>
 			</table>
 		</td>

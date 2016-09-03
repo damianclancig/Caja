@@ -27,7 +27,7 @@
 	if ($password == $row['clave']) {
 		
 	    $_SESSION['loggedin'] = true;
-	    $_SESSION['username'] = $username;
+	    $_SESSION['username'] = $row['idadmin'];
 	    $_SESSION['start'] = time();
 	    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
 		

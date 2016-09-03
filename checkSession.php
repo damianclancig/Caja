@@ -11,7 +11,7 @@
 	$now = time();
 	if($now > $_SESSION['expire']) {
 		session_destroy();
-		echo "Su sesion a terminado, <a href='login.php'>Necesita Hacer Login</a>";
+		header('Location: login.php');
 		exit;
 	}
 ?>

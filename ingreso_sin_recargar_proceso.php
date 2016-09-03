@@ -1,6 +1,7 @@
 <?php
+	session_start();
 	include("conexion.php");
-	$idadmin = $_POST["idadmin"];
+	$idadmin = $_SESSION['username'];
 	$descripcion = $_POST["descripcion"];
 	$anio = $_POST["anio"];
 	$mes = $_POST["mes"];
