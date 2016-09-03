@@ -14,4 +14,8 @@
 		header('Location: login.php');
 		exit;
 	}
+	else{
+		$_SESSION['start'] = time();
+		$_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+	}
 ?>

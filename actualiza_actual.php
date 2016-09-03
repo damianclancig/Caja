@@ -1,5 +1,4 @@
 <?php
-	include("checkSession.php");
 	include("conexion.php");
 	require("class.sql.php");
 	$sql = new SQLclass();

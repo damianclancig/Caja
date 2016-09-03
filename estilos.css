@@ -147,15 +147,15 @@ BODY{
 }
 .borIzqSup{
 	background:url(imagenes/bizqsup.png);
- 	width:11px;
- 	height:11px;
+ 	width:9px;
+ 	height:9px;
 }
 .borSup{
 	background:url(imagenes/bsup.jpg);
  }
 .borDerSup{
 	background:url(imagenes/bdersup.png);
- 	width:11px;
+ 	width:9px;
 }
 .borIzq{
 	background:url(imagenes/bizq.jpg);
@@ -165,7 +165,7 @@ BODY{
 }
 .borIzqInf{
 	background:url(imagenes/bizqinf.png);
- 	height:11px;
+ 	height:9px;
 }
 .borInf{
 	background:url(imagenes/binf.jpg);
@@ -291,4 +291,9 @@ a.submenu:active{
 
 .fondoBlanco{
 	background-color: #FFFFFF;
+}
+
+table, th, td {
+/*     border: 0px solid black; */
+    border-collapse: collapse;
 }

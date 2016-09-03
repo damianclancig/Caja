@@ -32,10 +32,10 @@ function diasDeMes(mes, anio) {
 $(document).ready(
 	function() {
 		setInterval(
-		$.ajax({
+		function(){$.ajax({
 			url : "checkSession.php",
 			method : "POST",
-		})
+		})}
 		, 60000);
 		CambioCuenta();
 		$("#imgEliminar").click(function() {

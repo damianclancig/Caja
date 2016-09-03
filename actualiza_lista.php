@@ -1,5 +1,4 @@
 <?php
-	include("checkSession.php");
 	include("conexion.php");
 	include 'variables.php';
 	$g=0;
