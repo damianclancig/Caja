@@ -1,5 +1,5 @@
 <?php
-	include("coneccion.php");
+	include("conexion.php");
 	$meses['01']="Enero";
 	$meses['1']="Enero";
 	$meses['02']="Febrero";

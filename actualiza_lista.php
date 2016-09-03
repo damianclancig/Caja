@@ -1,5 +1,5 @@
 <?php
-	include("coneccion.php");
+	include("conexion.php");
 	$meses[1]="Enero";
 	$meses[2]="Febrero";
 	$meses[3]="Marzo";

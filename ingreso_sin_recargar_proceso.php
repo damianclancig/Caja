@@ -1,5 +1,5 @@
 <?php
-	include("coneccion.php");
+	include("conexion.php");
 	$idadmin = $_POST["idadmin"];
 	$descripcion = $_POST["descripcion"];
 	$anio = $_POST["anio"];

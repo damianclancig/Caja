@@ -1,5 +1,5 @@
 <?php
-	include("coneccion.php");
+	include("conexion.php");
 	require("class.sql.php");
 	$meses[1]="Enero";
 	$meses[2]="Febrero";
