@@ -1,0 +1,290 @@
+BODY{
+	background-color:#DFF4FF;
+	background-image:url(imagenes/fondo.jpg);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+}
+#selector{
+	background:url(imagenes/menu_bar.jpg);
+	height:23px;
+}
+#info{
+	font-family:Tahoma, Verdana, Arial;
+	font-weight:bold;
+	font-size:11px;
+	color:#FFFFFF;
+	position:absolute;
+	width:450px;
+	left:5px;
+	top:5px;
+}
+#Beliminar{
+	position: absolute;
+	left:460px;
+	top:1px;
+}
+#Brenovar{
+	position: absolute;
+	left:550px;
+	top:1px;
+}
+#est{
+	position: absolute;
+	left:645px;
+	top:1px;
+}
+#herramientas{
+	background:url(thumb.php?image=imagenes/bar_menu2.jpg&w=14);
+	height:56px;
+}
+#herr{
+	position:absolute;
+	top:30px;
+	left:10px;
+}
+#Dfecha{
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	float:left;
+	padding-left:5px;
+}
+#Ddescripcion{
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	float:left;
+	padding-left:5px;
+}
+#Dcuenta{
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	float:left;
+	padding-left:5px;
+}
+#Dtarjeta{
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	float:left;
+	padding-left:5px;
+}
+#Dtipo{
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	float:left;
+	padding-left:5px;
+}
+#Dcuotas{
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	float:left;
+	padding-left:5px;
+}
+#Dmonto{
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	float:left;
+	padding-left:5px;
+}
+#Bguardar{
+	position:absolute;
+	left:660px;
+	top:12px;
+}
+#MsjError{
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#FF0000;
+	background-color:#CCCCCC;
+	padding:10px;
+	border:solid;
+	border-width:3px;
+	background-color:#CCCCCC;
+	z-index:10;
+	position:absolute;
+	top:100px;
+	left:250px;
+	width:500px;
+	height:400px;
+	overflow:auto;
+}
+#scroll{
+	width:1002px;
+	height:539px;
+	overflow:auto;
+}
+#scroll2{
+	position:absolute;
+	left:10px;
+	width:340px;
+	height:517px;
+	overflow:auto;
+}
+#DListaC{
+	position:absolute;
+	top:99px;
+	left:360px;
+	width:360px;
+	height:275px;
+	overflow:auto;
+}
+#DListaAct{
+	position:absolute;
+}
+#DListaGas{
+	position:absolute;
+}
+#DCuotasAcu{
+	position:absolute;
+}
+#Dfooter{
+	color:#000000;
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	text-align:center;
+}
+.borIzqSup{
+	background:url(imagenes/bizqsup.png);
+ 	width:11px;
+ 	height:11px;
+}
+.borSup{
+	background:url(imagenes/bsup.jpg);
+ }
+.borDerSup{
+	background:url(imagenes/bdersup.png);
+ 	width:11px;
+}
+.borIzq{
+	background:url(imagenes/bizq.jpg);
+}
+.borDer{
+	background:url(imagenes/bder.jpg);
+}
+.borIzqInf{
+	background:url(imagenes/bizqinf.png);
+ 	height:11px;
+}
+.borInf{
+	background:url(imagenes/binf.jpg);
+}
+.borDerInf{
+	background:url(imagenes/bderinf.png);
+}
+.colum1{
+	width:5px;
+}
+.colum2{
+	width:2px;
+	background-color:#83BCF1;
+}
+.colum3{
+	width:3px;
+}
+.tah11{
+	font-family: Tahoma, Arial;
+	font-size: 11px;
+	color: #000000;
+}
+.tah11n{
+	font-family: Tahoma, Arial;
+	font-size: 11px;
+	color: #000000;
+	font-weight:bold;
+}
+.tah11b{
+	font-family: Tahoma, Arial;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.tah11nb{
+	font-family: Tahoma, Arial;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+.tah12{
+	font-family: Tahoma, Arial;
+	font-size: 12px;
+	color: #000000;
+}
+.tah12n{
+	font-family: Tahoma, Arial;
+	font-size: 12px;
+	color: #000000;
+	font-weight:bold;
+}
+.tah13{
+	font-family: Tahoma, Arial;
+	font-size: 13px;
+	color:#000000;
+}
+.titulo{
+	font-family: Tahoma, arial;
+	font-size: 13px;
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#4B7EAB;
+	text-align:center;
+}
+a{
+	font-family: Tahoma, Arial;
+	font-size:11px;
+	color:#000000
+}
+a:link{
+	text-decoration:none;
+}
+a:visited{
+	text-decoration:none
+}
+a:hover{
+	text-decoration:underline;
+	color:#000000
+}
+a:active{
+	text-decoration:none;
+	color:#006699
+}
+a.menu{
+	font-family: Tahoma, Arial;
+	font-size:11px;
+	color:#FFFFFF;
+	font-weight:bold
+}
+a.menu:link{
+	text-decoration:none;
+}
+a.menu:visited{
+	text-decoration:none
+}
+a.menu:hover{
+	text-decoration:underline;
+	color:#000000
+}
+a.menu:active{
+	text-decoration:none;
+	color:#006699
+}
+a.submenu{
+	font-family: Tahoma, Arial;
+	font-size:11px;
+	color:#000000;
+	font-weight:bold
+}
+a.submenu:link{
+	text-decoration:none;
+}
+a.submenu:visited{
+	text-decoration:none
+}
+a.submenu:hover{
+	text-decoration:underline;
+	color:#000000
+}
+a.submenu:active{
+	text-decoration:none;
+	color:#006699
+}
